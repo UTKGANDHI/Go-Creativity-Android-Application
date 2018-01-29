@@ -1,0 +1,51 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- card -->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="button_elevation_material">6dp</dimen>
+    <dimen name="button_pressed_z_material">6dp</dimen>
+    <dimen name="item_offset">10dp</dimen>
+    <dimen name="detail_backdrop_height">250dp</dimen>
+    <dimen name="backdrop_title">30dp</dimen>
+    <dimen name="backdrop_subtitle">18dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_album_radius">0dp</dimen>
+    <dimen name="album_cover_height">120dp</dimen>
+    <dimen name="album_title_padding">10dp</dimen>
+    <dimen name="album_title">15dp</dimen>
+    <dimen name="songs_count_padding_bottom">5dp</dimen>
+    <dimen name="songs_count">12dp</dimen>
+    <dimen name="ic_album_overflow_width">20dp</dimen>
+    <dimen name="ic_album_overflow_height">30dp</dimen>
+    <dimen name="ic_album_overflow_margin_top">10dp</dimen>
+
+    <!-- home activity-->
+    <dimen name="layout_margin_default">10dp</dimen>
+    <dimen name="layout_padding_default">10dp</dimen>
+    <dimen name="header_img_size">70dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+
+    <dimen name="nav_drawer_width">235dp</dimen>
+
+    <dimen name="header_font_size">14sp</dimen>
+    <dimen name="movie_icon_container_height">300dp</dimen>
+
+    <!--for chat-->
+
+    <dimen name="item_size">192dp</dimen>
+
+
+    <dimen name="card_item_radius">3dp</dimen>
+    <dimen name="item_cover_height">160dp</dimen>
+    <dimen name="item_title_padding">10dp</dimen>
+    <dimen name="item_title">15dp</dimen>
+    <dimen name="item_price_padding_bottom">5dp</dimen>
+    <dimen name="item_price">12dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+</resources>

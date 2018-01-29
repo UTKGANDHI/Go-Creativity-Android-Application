@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ashutosh.mpiricmodule1"
+    android:configChanges="orientation|screenSize">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".ru.ifsoft.qachat.app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/creativity_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@mipmap/creativity_app"
+            android:stopWithTask="false" />
+
+        <activity
+            android:name=".SignUpActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Sign Up"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Login"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NetworkAvailability"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".ForgotPassword"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Versatile_logo"
+            android:parentActivityName=".Home"
+            android:label="Logos"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".V_play"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Filter"
+            android:parentActivityName=".V_play"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.youtube.API_KEY"
+            android:value="AIzaSyBtCAYeZSAsmDRQH_wtN_UPdjWaeGLHpNc" />
+
+        <activity
+            android:name=".Details"
+            android:parentActivityName=".V_play"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Cart"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddDescription"
+            android:parentActivityName=".Cart"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Account"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LOGO_ITEM_ACTIVITY"
+            android:parentActivityName=".Versatile_logo"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ALL_VIDEOS"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- chat activities manifest -->
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.example.ashutosh.mpiricmodule1.ru.ifsoft.qachat.ifsoft.chat.SearchActivity" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".ru.ifsoft.qachat.AppActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service android:name=".ru.ifsoft.qachat.service.MyFcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".ru.ifsoft.qachat.service.MyInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".ru.ifsoft.qachat.service.MyService"
+            android:exported="false" />
+
+        <activity
+            android:name=".ru.ifsoft.qachat.LoginActivity"
+            android:label=""
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ru.ifsoft.qachat.SignupActivity"
+            android:label="@string/title_activity_signup"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ru.ifsoft.qachat.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".ru.ifsoft.qachat.RecoveryActivity"
+            android:label="@string/title_activity_recovery"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ru.ifsoft.qachat.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ru.ifsoft.qachat.WebViewActivity"
+            android:label="@string/title_activity_web_view"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ru.ifsoft.qachat.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ru.ifsoft.qachat.ServicesActivity"
+            android:label="@string/title_activity_services"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ru.ifsoft.qachat.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ru.ifsoft.qachat.NotificationsActivity"
+            android:label="@string/title_activity_notifications"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ru.ifsoft.qachat.PhotoViewActivity"
+            android:label="@string/title_activity_photo_view"
+            android:theme="@style/PhotoViewTheme" />
+        <activity
+            android:name=".ru.ifsoft.qachat.AccountSettingsActivity"
+            android:label="@string/title_activity_account_settings"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ru.ifsoft.qachat.BlackListActivity"
+            android:label="@string/title_activity_black_list"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ru.ifsoft.qachat.DialogsActivity"
+            android:label="@string/title_activity_dialogs"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ru.ifsoft.qachat.ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ru.ifsoft.qachat.NotificationsSettingsActivity"
+            android:label="@string/title_activity_notifications_settings"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ru.ifsoft.qachat.SupportActivity"
+            android:label="@string/title_activity_support"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".ru.ifsoft.qachat.LocationActivity"
+            android:label="@string/title_activity_location"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".ru.ifsoft.qachat.DeactivateActivity"
+            android:label="@string/title_activity_deactivate"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".ru.ifsoft.qachat.FriendsActivity"
+            android:label="@string/title_activity_friends"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".ru.ifsoft.qachat.PeopleNearbyActivity"
+            android:label="@string/title_activity_nearby"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme">
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Orders"
+            android:parentActivityName=".Home"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Payment"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ConfirmationActivity"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".Search"></activity>
+    </application>
+
+</manifest>

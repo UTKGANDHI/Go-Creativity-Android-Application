@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "37495199637",
+    "firebase_url": "https://mpiric-153209.firebaseio.com",
+    "project_id": "mpiric-153209",
+    "storage_bucket": "mpiric-153209.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37495199637:android:61a6c16ddad4893c",
+        "android_client_info": {
+          "package_name": "ru.ifsoft.qachat.isoft.qachat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37495199637-cs2mfljvl0rfh6q5rtkg0pme0082fv74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
