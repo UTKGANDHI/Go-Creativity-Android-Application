@@ -11,9 +11,11 @@ The system will also be capable of providing a good customer support by chatting
 The application will work as an intermediary between the customer and the seller, which will help in maintaining the quality of the product. While similar applications in the market have a direct contact between the customer and seller, which does not maintain the quality as per the customer wishes.
 
 Tools: Android Studio, JDK, JRE
+
 Language: Java
 
 Overall Features
+
  Login
 
  Sign Up
