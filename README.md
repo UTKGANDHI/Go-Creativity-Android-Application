@@ -15,13 +15,23 @@ Language: Java
 
 Overall Features
  Login
+
  Sign Up
+
  Browse Items
+
  Search Items
+
  User Info
+
  Shopping Cart
+
  Requirements uploading
+
  Online Payment
+
  Chat functionality
+
  Order Tracking
+
  Notifications
